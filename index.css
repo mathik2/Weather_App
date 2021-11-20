@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+input,
+button {
+    padding: 1rem;
+    margin: 1%;
+}
+
+input {
+    width: 15rem;
+}
+
+button {
+    background-color: greenyellow;
+}
+
+#container {
+    width: 30vw;
+    height: 60vh;
+    background-color: white;
+    opacity: 0.8;
+    text-align: center;
+}
+
+#windAndTemp {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        width: 100vw;
+        height: 60vh;
+
+    }
+
+}
