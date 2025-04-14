@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
     text-align: center;
+    background-color: #f0f8ff;
+    transition: background-color 0.5s ease;
 }
 
 main {
@@ -17,20 +20,62 @@ header {
     background-color: black;
     color: white;
     padding: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-input,
+h2 {
+    margin: 1rem 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* From Uiverse.io by uiverse-astronaut */ 
 button {
-    padding: 1rem;
-    margin: 1%;
+    background: #5cbdfd;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+  
+button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+    background-color: #4aa3f0;
+    color: white;
+}
+  
+button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
 }
 
+/* From Uiverse.io by Yaseen549 */ 
 input {
-    width: 15rem;
+    background-color: #ece8e8;
+    max-width: 190px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 1rem 0;
+    font-size: 1rem;
 }
-
-button {
-    background-color: greenyellow;
+  
+input:focus {
+    color: rgb(12, 14, 14);
+    background-color: #f4f1f1;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
 }
 
 #container {
@@ -39,11 +84,20 @@ button {
     background-color: white;
     opacity: 0.8;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
 }
 
 #windAndTemp {
     display: flex;
     justify-content: space-evenly;
+}
+
+#windAndTemp div {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #555;
 }
 
 footer {
@@ -53,13 +107,26 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 600px) {
     #container {
         width: 100vw;
         height: 60vh;
-
     }
 
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        font-size: 16px;
+    }
 }

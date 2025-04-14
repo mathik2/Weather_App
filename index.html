@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>&#9748; Check City Weather</title>
     <link rel="stylesheet" href="index.css">
-
-
 </head>
 
 <body>
@@ -17,14 +15,12 @@
     </header>
 
     <h2>Get weather data by entering city name </h2>
-    <input id="city"><button onclick="getWeather()">Get Weather Data</button>
+    <input id="city" oninput="getWeather()" placeholder="Enter city name">
     <main id="main"></main>
 
     <footer>openweathermap API</footer>
-    <script src="index.js">
-       
 
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
