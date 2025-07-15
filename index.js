@@ -1,7 +1,7 @@
 let cityname = document.getElementById("city");
 let mainSection = document.getElementById("main");
 
-const API_KEY = "c2998d766e0080140c99a82cc5c1d15e";
+const API_KEY =  process.env.open_weather_api_key
 
 async function getWeather() {
   const city = cityname.value.trim();
